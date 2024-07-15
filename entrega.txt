@@ -1,0 +1,6 @@
+A entrega é composta pelos seguintes arquivos:
+
+- tp2.py: Arquivo que contém a implementação do algoritmo e os experimentos.
+- explore.ipynb: Contém o mesmo código implementado no arquivo acima, mais o código de geração do gráfico incluído no relatório.
+- acuracia.png: Gráfico dos experimentos salvo em png.
+- requirements.txt: Bibliotecas necessárias para execução do arquivo .py.

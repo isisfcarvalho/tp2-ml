@@ -96,18 +96,3 @@ for n_iter in tqdm(num_iters):
 # ------------------------------------------ Resultados dos experimentos e geração de gráfico
 results_df = pd.DataFrame(results, columns=['Número de iterações', 'Acurácia'])
 results_df.to_csv('results.csv', index=None)
-
-fig = px.line(results_df, 'Número de iterações', 'Acurácia', width=700, height=400)
-fig.update_layout(xaxis = dict(tickmode = 'linear',
-                                tick0 = 0,
-                                dtick = 50, 
-                                showgrid=False
-                            ), 
-                  title = {
-                            'text': "Acurácia de acordo com o número de iterações",
-                            'y': 0.92,
-                            'x': 0.5,
-                            'xanchor': 'center',
-                            'yanchor': 'top'}
-)
-fig.show()
